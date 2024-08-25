@@ -1,0 +1,10 @@
+CircRNA Name: AT4G08300_circ_g.2
+Potential function description:	response to drought stress
+Organism: Arabidpsis thaliana
+
+References: 
+- https://onlinelibrary.wiley.com/doi/10.1111/tpj.14267
+- http://ibi.zju.edu.cn/plantcircbase/show_circ.php?show_id=C6RRO9HQqfq311k08rV+LaFMZJyeQc8
+
+Splice junction sequence:
+CTCGGGCACCTCCTCCGAGACCACTGATCAGAATTGGGTTACCGGAACTCTAGCGGTTATGGGTAGTATCACCACTTGGGCAGGTTTCTTCATTCTACAA

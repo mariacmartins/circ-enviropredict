@@ -1,0 +1,10 @@
+name: circ_enviropredict
+channels: 
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10.12
+  - pip
+  - jupyterlab
+  - pip:
+    - -r requirements.txt
