@@ -18,6 +18,13 @@ $ streamlit run app.py
 
 To deactivate the virtual environment, run the command: `conda deactivate`
 
+After the initial configuration, there is no need to create the virtual env again. To run the application locally later, simply run the commands in the folder:
+
+```
+$ conda activate circ_enviropredict
+$ streamlit run app.py
+```
+
 ### 📁 Project Structure:
 
 - `app.py`: Main app file, responsible to run the web application.
