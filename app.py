@@ -30,7 +30,7 @@ def circrna_to_vec(circrna_sequence, k=kmer_size):
     return vec
 
 def is_valid_sequence(sequence):
-      return re.fullmatch(r'[acgtunACGTUN]+', sequence) is not None
+    return len(sequence) >= 20 and re.fullmatch(r'[acgtunACGTUN]+', sequence) is not None
 
 # User-Streamlit interface
 col1, col2 = st.columns([3, 1])  
@@ -60,11 +60,12 @@ if st.button('Submit'):
 
         # Prediction
         y_pred = drought_model.predict(final_df)
+        y_pred_proba = drought_model.predict_proba(final_df)
 
         if y_pred[0] == 1:
-            st.write('**Prediction result:** Possible involvement with drought stress.')
+            st.write(f'**Prediction result:** Possible involvement with drought stress. Probability: {y_pred_proba[:, 1]}.')
         else:
-            st.write('**Prediction result:** No involvement with drought stress detected.')
+            st.write(f'**Prediction result:** No involvement with drought stress detected. Probability: {y_pred_proba[:, 0]}.')
 
     else:
         st.write('Please enter a valid circRNA sequence.')
