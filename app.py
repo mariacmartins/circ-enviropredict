@@ -4,6 +4,9 @@ import numpy as np
 import pandas as pd
 from joblib import load
 import re
+import warnings
+
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Load models
 w2v_model = Word2Vec.load("models/word2vec_model_maize.bin")
