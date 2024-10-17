@@ -30,6 +30,8 @@ def circrna_to_vec(circrna_sequence, k=kmer_size):
     return vec
 
 def is_valid_sequence(sequence):
+    sequence = sequence.replace(" ", "").replace("\n", "")
+
     return len(sequence) >= 20 and re.fullmatch(r'[acgtunACGTUN]+', sequence) is not None
 
 # User-Streamlit interface
@@ -45,7 +47,7 @@ st.subheader('A Machine Learning tool that allows the prediction of the possible
 st.write('*For now, we only have predictive models to evaluate the possible involvement of circRNAs in drought stress. But in the future, we intend to add more conditions.*')
 
 
-seq_input = st.text_area("**circRNA sequence:**", height=150, placeholder="Example of accepted format: CTCGGGCACCTCCTCCGAGACCACTGAT")
+seq_input = st.text_area("**circRNA sequence:**", height=150, placeholder="Example of accepted format: CTCGGGCACCTCCTCCGAGACCACTGAT. At least 20 characters are required.")
 
 if st.button('Submit'):
     if is_valid_sequence(seq_input):
