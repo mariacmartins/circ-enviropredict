@@ -4,8 +4,6 @@
 
 Find out if a circRNA is potentially involved in some type of abiotic stress using its biological sequence.
 
-*Note: for now, the tool is only predicting potential involvement in drought stress.*
-
 **Web application developed with Streamlit.**
 
 ### Running circ-EnviroPredict locally (Setup):
