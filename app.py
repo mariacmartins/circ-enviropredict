@@ -54,7 +54,7 @@ st.markdown('##### A Machine Learning tool that allows the prediction of the pos
 stress_type = st.radio("Select the type of stress:", ('drought', 'cold'))
 
 # Input seq and Submit
-seq_input = st.text_area("**circRNA sequence:**", height=150, placeholder="Example of accepted format: CTCGGGCACCTCCTCCGAGACCACTGAT. At least 20 characters are required.")
+seq_input = st.text_area("**circRNA sequence:**", height=120, placeholder="Example of accepted format: CTCGGGCACCTCCTCCGAGACCACTGAT. At least 20 characters are required. Only one input sequence is accepted at a time.")
 
 if st.button('Submit'):
     if is_valid_sequence(seq_input):
@@ -94,4 +94,4 @@ if st.button('Submit'):
                 st.write(f'**Prediction result:** No involvement with cold stress detected. Probability: {y_pred_proba[:, 0][0]:.2f}.')
 
     else:
-        st.write('Please enter a valid circRNA sequence.')
+        st.write('Please enter a valid circRNA sequence. Remove special characters and headers, keep only the circRNA sequence. At least 20 characters are required. Only one input sequence is accepted at a time.')
