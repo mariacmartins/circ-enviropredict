@@ -51,7 +51,7 @@ with col2:
 st.markdown('##### A Machine Learning tool that allows the prediction of the possible involvement of circRNAs with abiotic stress.')
 
 # Selecting the type of stress
-stress_type = st.radio("Select the type of stress:", ('drought', 'cold'))
+stress_type = st.radio("Select the type of stress you want to predict possible involvement:", ('drought', 'cold'))
 
 # Input seq and Submit
 seq_input = st.text_area("**circRNA sequence:**", height=120, placeholder="Example of accepted format: CTCGGGCACCTCCTCCGAGACCACTGAT. At least 20 characters are required. Only one input sequence is accepted at a time.")
