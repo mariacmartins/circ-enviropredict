@@ -58,6 +58,7 @@ seq_input = st.text_area("**circRNA sequence:**", height=150, placeholder="Examp
 
 if st.button('Submit'):
     if is_valid_sequence(seq_input):
+        seq_input = seq_input.replace("U", "T").replace('u', 't').upper()
         # Transforming input data to Word2vec format
         columns = [f'wc_3mer_{v+1}' for v in range(vector_size)]
         df_vecs = pd.DataFrame(columns=columns)
