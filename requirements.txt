@@ -5,3 +5,4 @@ biopython
 gensim 
 umap-learn
 streamlit
+lightgbm
