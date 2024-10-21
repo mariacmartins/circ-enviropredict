@@ -30,4 +30,4 @@ w2v_model.corpus_count
 w2v_model.train(corpus_file='oryza_corpus.txt', total_words=w2v_model.corpus_total_words, epochs=1)
 
 # Save the model
-w2v_model.save("word2vec_model_rice.bin")
+w2v_model.save("word2vec_model_rice_3mer.bin")

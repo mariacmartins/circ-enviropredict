@@ -32,4 +32,4 @@ w2v_model.corpus_count
 w2v_model.train(corpus_file='maize_corpus.txt', total_words=w2v_model.corpus_total_words, epochs=1)
 
 # Save the model
-w2v_model.save("word2vec_model_maize.bin")
+w2v_model.save("word2vec_model_maize_3mer.bin")
