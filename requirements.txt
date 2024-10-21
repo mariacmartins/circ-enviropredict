@@ -6,3 +6,4 @@ gensim
 umap-learn
 streamlit
 lightgbm
+imbalanced-learn
