@@ -7,3 +7,4 @@ umap-learn
 streamlit
 lightgbm
 imbalanced-learn
+openpyxl
