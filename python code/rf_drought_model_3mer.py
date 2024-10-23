@@ -19,7 +19,7 @@ df_drought = df.query('stress == "-" or stress == "drought"').replace('-', 0).re
 X = df_drought.drop(['stress'], axis=1)
 y = df_drought['stress']
 
-ros = RandomUnderSampler(sampling_strategy=1)
+ros = RandomUnderSampler(sampling_strategy=0.7)
 
 X_res, y_res = ros.fit_resample(X, y)
 
