@@ -14,3 +14,17 @@ TCGTTATGATGCTCGTCAAAAGG
 
 Divergent primer:
 CCAGATAACCCAATAAATGCAGGT
+----------------------------------------
+
+CircRNA Name: gma_circ_0000678
+
+Potential function description: response to cold stress
+Organism: Glycine max / Soybean
+
+Reference: Identification and functional prediction of soybean CircRNAs involved in low-temperature responses
+https://doi.org/10.1016/j.jplph.2020.153188
+
+Sequences:
+
+Divergent primer (Forward) /qRT-PCR primer:
+ATGCTTTCATAGGTTTTTGGCG
