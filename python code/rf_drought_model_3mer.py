@@ -19,13 +19,19 @@ df_drought = df.query('stress == "-" or stress == "drought"').replace('-', 0).re
 X = df_drought.drop(['stress'], axis=1)
 y = df_drought['stress']
 
-ros = RandomUnderSampler(sampling_strategy=0.7)
+ros = RandomUnderSampler(sampling_strategy=0.55)
 
 X_res, y_res = ros.fit_resample(X, y)
 
-X_train, X_test, y_train, y_test = train_test_split(X_res, y_res, test_size=0.20, random_state=88)
+X_train, X_test, y_train, y_test = train_test_split(X_res, y_res, test_size=0.20, random_state=106)
 
-modelrf = RandomForestClassifier(random_state=88)
+rus = RandomUnderSampler(sampling_strategy=1)
+X_test, y_test = rus.fit_resample(X_test, y_test)
+
+ros = RandomOverSampler(sampling_strategy=1)
+X_train, y_train = ros.fit_resample(X_train, y_train)
+
+modelrf = RandomForestClassifier(random_state=106)
 modelrf.fit(X_train, y_train)
 
 y_pred = modelrf.predict(X_test)
