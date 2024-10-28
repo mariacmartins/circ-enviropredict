@@ -1,6 +1,6 @@
 CircRNA Name: AT1G03993_circ_g.1
 Potential function description: control
-Organism: AT1G03993_circ_g.1
+Organism: Arabidpsis thaliana
 
 References: 
 - http://ibi.zju.edu.cn/plantcircbase/show_circ.php?show_id=XaVUbtfQ/q2311k08rV+LaFMZpWXQs8
@@ -10,3 +10,26 @@ GTAGAGGGCATGTTAATAATTCTAGGGAGGGAGATAGGTTTATGAATAGGAAACGTACTCGTAA
 TTGGGACGAGGCGGGTAACAATAAGAAGAAAAGGGAATGTAACAATTACAGAAGAGATGGTAGA
 GATAGAGAA
 
+Splice junction sequence:
+ACGAGGCGGGTAACAATAAGAAGAAAAGGGAATGTAACAATTACAGAAGAGATGGTAGAGATAG
+AGAAgtagagggcatgttaataattctagggagggagataggtttatgaataggaaacgtactc
+gtaattggg
+
+--------------------------------------------------------
+CircRNA Name: 
+Potential function description: control
+Organism: Arabidpsis thaliana
+
+References: http://ibi.zju.edu.cn/plantcircbase/show_circ.php?show_id=B6sEPdXV/6+311k08rV+LaFMZpWXQ84
+
+Genomic Sequence:
+CCTTGAGAGTAGCCATGGAGGAGACAAGTATGCAATCTGACTTATCATCTCACCGGGAACTCCC
+CGGAGAAGTCATCGTTCCCGGAAATAATCAAATCGGAAGCAAAACAAAAAAAAATCTCTAAAAA
+TAAATTTAAAAAACAGAGAGAAGAAGGAAGAAGATAACTGAAGAAGAAGAAGAAGAAGAAGAAG
+AAGAAGAAGAAGGAAGA
+
+Splice junction Sequence:
+AAAAAAAAATCTCTAAAAATAAATTTAAAAAACAGAGAGAAGAAGGAAGAAGATAACTGAAGAA
+GAAGAAGAAGAAGAAGAAGAAGAAGAAGAAGGAAGAccttgagagtagccatggaggagacaag
+tatgcaatctgacttatcatctcaccgggaactccccggagaagtcatcgttcccggaaataat
+caaatcgg
