@@ -80,18 +80,24 @@ if st.button('Submit'):
             y_pred_proba = drought_model.predict_proba(final_df)
 
             if y_pred[0] == 1:
-                st.write(f'**Prediction result:** Possible involvement with drought stress. Probability: {y_pred_proba[:, 1][0]:.2f}.')
+                st.write(f'**Prediction result:** Possible involvement with drought stress.')
+                st.write(f'**Probability of drought stress involvement:** {y_pred_proba[:, 1][0]:.2f}.')
+
             else:
-                st.write(f'**Prediction result:** No involvement with drought stress detected. Probability: {y_pred_proba[:, 0][0]:.2f}.')
+                st.write(f'**Prediction result:** No involvement with drought stress detected.')
+                st.write(f'**Probability of no involvement with stress condition:** {y_pred_proba[:, 0][0]:.2f}.')
 
         elif stress_type == 'cold':
             y_pred = cold_model.predict(final_df)
             y_pred_proba = cold_model.predict_proba(final_df)
 
             if y_pred[0] == 1:
-                st.write(f'**Prediction result:** Possible involvement with cold stress. Probability: {y_pred_proba[:, 1][0]:.2f}.')
+                st.write(f'**Prediction result:** Possible involvement with cold stress.')
+                st.write(f'**Probability of cold stress involvement:** {y_pred_proba[:, 1][0]:.2f}.')
+            
             else:
-                st.write(f'**Prediction result:** No involvement with cold stress detected. Probability: {y_pred_proba[:, 0][0]:.2f}.')
+                st.write(f'**Prediction result:** No involvement with cold stress detected.')
+                st.write(f'**Probability of no involvement with stress condition:** {y_pred_proba[:, 0][0]:.2f}.')
 
     else:
         st.write('Please enter a valid circRNA sequence. Remove special characters and headers, keep only the circRNA sequence. At least 20 characters are required. Only one input sequence is accepted at a time.')
