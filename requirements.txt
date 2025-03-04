@@ -8,3 +8,4 @@ streamlit
 lightgbm
 imbalanced-learn
 openpyxl
+pytest
