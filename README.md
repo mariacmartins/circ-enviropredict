@@ -16,7 +16,7 @@ $ streamlit run app.py
 
 To deactivate the virtual environment, run the command: `conda deactivate`
 
-After the initial configuration, there is no need to create the virtual env again. To run the application locally later, simply run the commands in the folder:
+After the initial configuration, there is no need to create the virtual env again. To run the application locally later, simply enter in the project folder and run the commands:
 
 ```
 $ conda activate circ_enviropredict
@@ -32,3 +32,4 @@ $ streamlit run app.py
 - `models/`: Trained models (models are serialized using joblib).
 - `notebooks/`: Jupyter notebooks containing exploratory analysis and evaluation of trained models.
 - `python code/`: Python codes used to create models.
+- `tests/`: Unit tests.
