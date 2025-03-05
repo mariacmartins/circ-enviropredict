@@ -9,11 +9,11 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # Load models
-w2v_model_maize = Word2Vec.load("models/word2vec_model_maize_3mer.bin")
-w2v_model_rice = Word2Vec.load("models/word2vec_model_rice_3mer.bin")
+w2v_model_maize = Word2Vec.load("models/w2v_app/word2vec_model_maize_3mer.bin")
+w2v_model_rice = Word2Vec.load("models/w2v_app/word2vec_model_rice_3mer.bin")
 
-drought_model = load('models/rf_model_drought_3mer.joblib')
-cold_model = load('models/rf_model_cold_3mer.joblib')
+drought_model = load('models/rf_app/rf_model_drought_3mer.joblib')
+cold_model = load('models/rf_app/rf_model_cold_3mer.joblib')
 
 # Params
 kmer_size = 3
