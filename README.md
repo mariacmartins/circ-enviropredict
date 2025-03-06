@@ -28,7 +28,6 @@ $ streamlit run app.py
 - `app.py`: Main app file, responsible to run the web application.
 - `environment.yml`: Environment configuration file.
 - `requirements.txt`: Libs needed for the project.
-- `data/`: Data directory. 
 - `models/`: Trained models (models are serialized using joblib).
 - `notebooks/`: Jupyter notebooks containing exploratory analysis and evaluation of trained models.
 - `python code/`: Python codes used to create models.
