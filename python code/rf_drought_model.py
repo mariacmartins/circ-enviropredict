@@ -5,10 +5,10 @@ from imblearn.under_sampling import RandomUnderSampler
 from sklearn.ensemble import RandomForestClassifier
 from joblib import dump
 
-rice_df = pd.read_excel('data/word2vec/rice_w2vec_3mer_dataset.xlsx')
+rice_df = pd.read_excel('data/word2vec/rice_w2vec_3mer_64_dataset.xlsx')
 rice_df = rice_df.drop(['circName','tissue','chr','start','end','strand','start_anno', 'circID',	'gene', 'isoform', 'width', 'detection_score', 'stress_detection_score', 'end_anno', 'antisense', 'algorithm', 'seq', 'exonSeq', 'predAA', 'miRNA','superCircRNARegion'], axis=1)
 
-maize_df = pd.read_excel('data/word2vec/maize_w2vec_3mer_dataset.xlsx')
+maize_df = pd.read_excel('data/word2vec/maize_w2vec_3mer_64_dataset.xlsx')
 maize_df = maize_df.drop(['circName','tissue','chr','start','end','strand','start_anno', 'circID',	'gene', 'isoform', 'width', 'detection_score', 'stress_detection_score', 'end_anno', 'antisense', 'algorithm', 'seq', 'exonSeq', 'predAA', 'miRNA','superCircRNARegion'], axis=1)
 
 df = rice_df._append(maize_df, ignore_index = True)

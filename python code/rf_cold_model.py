@@ -5,7 +5,7 @@ from imblearn.under_sampling import RandomUnderSampler
 from sklearn.ensemble import RandomForestClassifier
 from joblib import dump
 
-rice_df = pd.read_excel('data/word2vec/rice_w2vec_3mer_dataset.xlsx')
+rice_df = pd.read_excel('data/word2vec/rice_w2vec_3mer_64_dataset.xlsx')
 
 df_cold = rice_df.query('stress == "-" or stress == "cold"').replace('-', 0).replace('cold', 1)
 
