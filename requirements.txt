@@ -9,3 +9,4 @@ lightgbm
 imbalanced-learn
 openpyxl
 pytest
+catboost
