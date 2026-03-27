@@ -8,8 +8,9 @@ Find out if a circRNA is potentially involved in some type of abiotic stress usi
 Available at: <https://circ-enviropredict.streamlit.app/>
 
 ### Running circ-EnviroPredict locally (Setup):
-```
+
 Clone the repository, enter the created folder and run in Anaconda prompt:
+```
 $ conda env create --file environment.yml
 $ conda activate circ_enviropredict
 $ streamlit run app.py
@@ -33,3 +34,4 @@ $ streamlit run app.py
 - `notebooks/`: Jupyter notebooks containing exploratory analysis and evaluation of trained models.
 - `python code/`: Python codes used to create models.
 - `tests/`: Unit tests.
+- `data/`: Raw data, data used to train models, transformed datasets, and validation samples.
